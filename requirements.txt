@@ -1,0 +1,13 @@
+dash
+dash-bootstrap-components
+pandas
+notebook
+ipython
+geopy
+shapely
+sqlalchemy
+requests
+folium
+geopandas
+beautifulsoup4
+pyodbc

@@ -1,0 +1,2 @@
+,adresse,commune,code_postal
+0,82 boulevard des anglais ,Nantes,44100

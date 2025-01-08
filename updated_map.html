@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08596af558c75cb165dcce1dbd340f46 {
+                    position: relative;
+                    width: 700.0px;
+                    height: 700.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_08596af558c75cb165dcce1dbd340f46" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_08596af558c75cb165dcce1dbd340f46 = L.map(
+                "map_08596af558c75cb165dcce1dbd340f46",
+                {
+                    center: [47.279754, -1.551435],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9cacbc2a3aefa4a0bdb28fa2f4e9d725 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9cacbc2a3aefa4a0bdb28fa2f4e9d725.addTo(map_08596af558c75cb165dcce1dbd340f46);
+        
+    
+            var marker_1d8548aed500e998ad3a40b0fd9fcec7 = L.marker(
+                [47.279754, -1.551435],
+                {}
+            ).addTo(map_08596af558c75cb165dcce1dbd340f46);
+        
+    
+            var icon_a3ae392af871f77cc6dd8f94ced7cc90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1d8548aed500e998ad3a40b0fd9fcec7.setIcon(icon_a3ae392af871f77cc6dd8f94ced7cc90);
+        
+    
+        var popup_d0435918ff10c67688d1d6a293fc818c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dcf4aa481dc785ec9e694fb700d625f1 = $(`<div id="html_dcf4aa481dc785ec9e694fb700d625f1" style="width: 100.0%; height: 100.0%;">             <div style="font-size: 12px;">                 <b>Adresse:</b> 52 rue de leinster<br>                 <b>Commune:</b> la chapelle sur erdre             </div>             </div>`)[0];
+                popup_d0435918ff10c67688d1d6a293fc818c.setContent(html_dcf4aa481dc785ec9e694fb700d625f1);
+            
+        
+
+        marker_1d8548aed500e998ad3a40b0fd9fcec7.bindPopup(popup_d0435918ff10c67688d1d6a293fc818c)
+        ;
+
+        
+    
+    
+        function geo_json_cf680517d5621631182a4c1c803747c5_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "darkgreen", "fillColor": "green", "fillOpacity": 0.5, "weight": 1.5};
+            }
+        }
+
+        function geo_json_cf680517d5621631182a4c1c803747c5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_cf680517d5621631182a4c1c803747c5 = L.geoJson(null, {
+                onEachFeature: geo_json_cf680517d5621631182a4c1c803747c5_onEachFeature,
+            
+                style: geo_json_cf680517d5621631182a4c1c803747c5_styler,
+        });
+
+        function geo_json_cf680517d5621631182a4c1c803747c5_add (data) {
+            geo_json_cf680517d5621631182a4c1c803747c5
+                .addData(data);
+        }
+            geo_json_cf680517d5621631182a4c1c803747c5_add({"bbox": [-1.597767340305982, 47.254903072288236, -1.5265048475382106, 47.353295618627826], "features": [{"bbox": [-1.597767340305982, 47.254903072288236, -1.5265048475382106, 47.353295618627826], "geometry": {"coordinates": [[[-1.5391064455272836, 47.254903072288236], [-1.5265048475382106, 47.28052110873126], [-1.5334084819697194, 47.291487760798006], [-1.5310171850572947, 47.30878162957669], [-1.5423748748540285, 47.315887472081734], [-1.5472443342313278, 47.333693295567606], [-1.5741197232991533, 47.353295618627826], [-1.597767340305982, 47.3336399719821], [-1.5782205361776052, 47.30700793887989], [-1.5856597692834071, 47.29841871386361], [-1.5858243600021942, 47.27788624009831], [-1.5391064455272836, 47.254903072288236]]], "type": "Polygon"}, "id": "0", "properties": {"Unnamed: 0": 0, "adresse": "52 rue de leinster", "code_id_bv": "44035_13", "code_iris": "440350109", "code_postal": 44242, "commune": "la chapelle sur erdre", "latitude": 47.279754, "longitude": -1.551435, "result_city": "La Chapelle-sur-Erdre", "result_citycode": "44035", "result_name": "Rue du Leinster", "result_postcode": "44240", "result_score": 0.7604129128, "result_status": "ok", "result_type": "street"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_cf680517d5621631182a4c1c803747c5.addTo(map_08596af558c75cb165dcce1dbd340f46);
+        
+    
+        function geo_json_830f7def93fc343b57fda191a37ebcb7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "fillColor": "lightblue", "fillOpacity": 0.5, "weight": 1};
+            }
+        }
+
+        function geo_json_830f7def93fc343b57fda191a37ebcb7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_830f7def93fc343b57fda191a37ebcb7 = L.geoJson(null, {
+                onEachFeature: geo_json_830f7def93fc343b57fda191a37ebcb7_onEachFeature,
+            
+                style: geo_json_830f7def93fc343b57fda191a37ebcb7_styler,
+        });
+
+        function geo_json_830f7def93fc343b57fda191a37ebcb7_add (data) {
+            geo_json_830f7def93fc343b57fda191a37ebcb7
+                .addData(data);
+        }
+            geo_json_830f7def93fc343b57fda191a37ebcb7_add({"bbox": [-1.5546582018811275, 47.27021183699847, -1.5399052879694701, 47.28998007740615], "features": [{"bbox": [-1.5546582018811275, 47.27021183699847, -1.5399052879694701, 47.28998007740615], "geometry": {"coordinates": [[[-1.5469508048927358, 47.273700781250156], [-1.54256157434753, 47.27021183699847], [-1.5399052879694701, 47.285361429993834], [-1.5490152875613576, 47.28998007740615], [-1.5546582018811275, 47.28055980685745], [-1.5469508048927358, 47.273700781250156]]], "type": "Polygon"}, "id": "0", "properties": {"Unnamed: 0": 0, "adresse": "52 rue de leinster", "code_id_bv": "44035_13", "code_iris": "440350109", "code_postal": 44242, "commune": "la chapelle sur erdre", "latitude": 47.279754, "longitude": -1.551435, "result_city": "La Chapelle-sur-Erdre", "result_citycode": "44035", "result_name": "Rue du Leinster", "result_postcode": "44240", "result_score": 0.7604129128, "result_status": "ok", "result_type": "street"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_830f7def93fc343b57fda191a37ebcb7.addTo(map_08596af558c75cb165dcce1dbd340f46);
+        
+    
+        function geo_json_3974b984a32f0ddc72b25da3672e39a0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "orange", "fillColor": "orange", "fillOpacity": 0.5, "weight": 1.5};
+            }
+        }
+
+        function geo_json_3974b984a32f0ddc72b25da3672e39a0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3974b984a32f0ddc72b25da3672e39a0 = L.geoJson(null, {
+                onEachFeature: geo_json_3974b984a32f0ddc72b25da3672e39a0_onEachFeature,
+            
+                style: geo_json_3974b984a32f0ddc72b25da3672e39a0_styler,
+        });
+
+        function geo_json_3974b984a32f0ddc72b25da3672e39a0_add (data) {
+            geo_json_3974b984a32f0ddc72b25da3672e39a0
+                .addData(data);
+        }
+            geo_json_3974b984a32f0ddc72b25da3672e39a0_add({"bbox": [-1.553369900482609, 47.254903, -1.527118017863669, 47.28446536746689], "features": [{"bbox": [-1.553369900482609, 47.254903, -1.527118017863669, 47.28446536746689], "geometry": {"coordinates": [[[-1.549621803327865, 47.267254479030356], [-1.543934675545785, 47.273633497234876], [-1.553369900482609, 47.27674134797804], [-1.552130828816239, 47.28322899641678], [-1.527118017863669, 47.28446536746689], [-1.539106, 47.254903], [-1.549564306646352, 47.25656156739656], [-1.549621803327865, 47.267254479030356]]], "type": "Polygon"}, "id": "0", "properties": {"Unnamed: 0": 0, "adresse": "52 rue de leinster", "code_id_bv": "44035_13", "code_iris": "440350109", "code_postal": 44242, "commune": "la chapelle sur erdre", "latitude": 47.279754, "longitude": -1.551435, "result_city": "La Chapelle-sur-Erdre", "result_citycode": "44035", "result_name": "Rue du Leinster", "result_postcode": "44240", "result_score": 0.7604129128, "result_status": "ok", "result_type": "street"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_3974b984a32f0ddc72b25da3672e39a0.addTo(map_08596af558c75cb165dcce1dbd340f46);
+        
+    
+        function geo_json_cab068252295e4c855c52fd248a0d2c4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return ;
+            }
+        }
+
+        function geo_json_cab068252295e4c855c52fd248a0d2c4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_cab068252295e4c855c52fd248a0d2c4 = L.geoJson(null, {
+                onEachFeature: geo_json_cab068252295e4c855c52fd248a0d2c4_onEachFeature,
+            
+                style: geo_json_cab068252295e4c855c52fd248a0d2c4_styler,
+        });
+
+        function geo_json_cab068252295e4c855c52fd248a0d2c4_add (data) {
+            geo_json_cab068252295e4c855c52fd248a0d2c4
+                .addData(data);
+        }
+            geo_json_cab068252295e4c855c52fd248a0d2c4_add({"bbox": [NaN, NaN, NaN, NaN], "features": [], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_cab068252295e4c855c52fd248a0d2c4.addTo(map_08596af558c75cb165dcce1dbd340f46);
+        
+    
+            var layer_control_6cba8f65224b125a1ef2ec2c89b34f27_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9cacbc2a3aefa4a0bdb28fa2f4e9d725,
+                },
+                overlays :  {
+                    "Contours Commune" : geo_json_cf680517d5621631182a4c1c803747c5,
+                    "Contours Iris" : geo_json_830f7def93fc343b57fda191a37ebcb7,
+                    "Contours Bureau de Vote" : geo_json_3974b984a32f0ddc72b25da3672e39a0,
+                    "Contours D\u00e9partement" : geo_json_cab068252295e4c855c52fd248a0d2c4,
+                },
+            };
+            let layer_control_6cba8f65224b125a1ef2ec2c89b34f27 = L.control.layers(
+                layer_control_6cba8f65224b125a1ef2ec2c89b34f27_layers.base_layers,
+                layer_control_6cba8f65224b125a1ef2ec2c89b34f27_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_08596af558c75cb165dcce1dbd340f46);
+
+        
+</script>
+</html>
